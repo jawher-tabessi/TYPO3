@@ -1,0 +1,50 @@
+
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+<f:flashMessages renderMode="div" />
+<div style="display:none;" class="html5gallery" data-skin="{settings.skin}" data-responsive="true" data-width="{settings.width}" data-height="{settings.height}">
+
+<f:comment>
+Looping Medias
+</f:comment>
+<f:for each="{medias}" as="media">
+	<f:comment>
+	If Media is Image then construct image URL and Thumbnail
+	</f:comment>
+	<f:if condition="{media.type} == 1">
+		<a href="{media.file.originalResource.publicUrl}">
+			<f:image src="{media.file.originalResource.publicUrl}" alt="{media.description}" />
+		</a>
+	</f:if>
+	<f:comment>
+	If Media is Video then construct video URL and Thumbnail
+	</f:comment>
+	<f:if condition="{media.type} == 2">
+		<a href="/{media.file.originalResource.publicUrl}">
+			<f:image src="{media.thumbnail.originalResource.publicUrl}" alt="{media.description}" />
+		</a>
+	</f:if>
+	<f:comment>
+	If Media is Youtube then construct Youtube URL with the video ID and get Thumbnail generated automatically by Youtube
+	</f:comment>
+	<f:if condition="{media.type} == 3">
+		<a href="http://www.youtube.com/embed/FPdY-qeW7U4/{media.url}">
+			<img src="http://img.youtube.com/vi/{media.url}/2.jpg" alt="{media.description}"></a>
+		</a>
+	</f:if>
+</f:for>
+
+</div>
+</f:section>

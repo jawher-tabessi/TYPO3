@@ -1,0 +1,98 @@
+
+<f:layout name="Backend" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="content">
+<h1>Listing for Media</h1>
+
+<f:flashMessages />
+
+<table cellspacing="0" cellpadding="0" border="0" class="typo3-dblist">
+	<tbody>
+		<tr class="c-table-row-spacer">
+			<td nowrap="nowrap" class="col-icon"><img width="1" height="8" alt="" src="clear.gif"></td>
+			<td nowrap="nowrap" class=""><img width="230" height="1" alt="" src="clear.gif"></td>
+			<td nowrap="nowrap" class=""><img width="230" height="1" alt="" src="clear.gif"></td>
+			<td nowrap="nowrap" class=""><img width="230" height="1" alt="" src="clear.gif"></td>
+			<td nowrap="nowrap" class=""><img width="230" height="1" alt="" src="clear.gif"></td>
+			<td nowrap="nowrap" class="" width="10"><img width="1" height="1" alt="" src="clear.gif"></td>
+		</tr>
+		<tr class="t3-row-header">
+			<td nowrap="nowrap" class="col-icon">&nbsp;</td>
+			<td nowrap="nowrap" colspan="5">
+				<span class="c-table">
+					Medias
+				</span>
+				(<f:count subject="{medias}" />)
+			</td>
+			<td nowrap="nowrap" class="col-icon">&nbsp;</td>
+		</tr>
+		<tr class="c-headLine">
+			<td nowrap="nowrap" class="col-icon">
+				
+			</td>
+			<td nowrap="nowrap" class="col-title">
+				Description
+			</td>
+			<td nowrap="nowrap" class="col-title">
+				Type
+			</td>
+			<td nowrap="nowrap" class="col-icon"></td>
+		</tr>
+
+	<f:for each="{medias}" as="media">
+		<tr>
+			<td nowrap="nowrap" class="col-icon">
+				<span class="t3-icon t3-icon-tcarecords t3-icon-tcarecords-tx_jtgallery_domain_model_media t3-icon-tx_jtgallery_domain_model_media-default" style="" title="id={media.uid}">&nbsp;</span>
+			</td>
+			<td nowrap="nowrap" class="col-title">{media.description}</td>
+			<td nowrap="nowrap" class="col-title">
+				<f:if condition="{media.type} == 1">
+					Image
+				</f:if>
+				<f:if condition="{media.type} == 2">
+					Video
+				</f:if>
+				<f:if condition="{media.type} == 3">
+					Youtube
+				</f:if>
+			</td>
+			<td nowrap="nowrap" class="">
+				<a title="Display information" onclick="top.launchView('tx_jtgallery_domain_model_media', '{media.uid}'); return false;" href="#">
+					<span class="t3-icon t3-icon-actions t3-icon-actions-document t3-icon-document-info">&nbsp;</span>
+				</a>
+
+				<a title="Edit record" onclick="window.location.href='alt_doc.php?returnUrl='+T3_THIS_LOCATION+'&amp;edit[tx_jtgallery_domain_model_media][{media.uid}]=edit'; return false;" href="#">
+					<span class="t3-icon t3-icon-actions t3-icon-actions-document t3-icon-document-open">&nbsp;</span>
+				</a>
+
+				<a title="Delete record (!)" onclick="if (confirm('Are you sure ? You want really to delete this record')) {jumpToUrl('tce_db.php?&amp;cmd[tx_jtgallery_domain_model_media][{media.uid}][delete]=1&amp;redirect='+T3_THIS_LOCATION+'&amp;vC=a0ce0ab232&amp;formToken=4031737271427b3c5773808eb4c722e220dba946&amp;prErr=1&amp;uPT=1');} return false;" href="#">
+				<span class="t3-icon t3-icon-actions t3-icon-actions-edit t3-icon-edit-delete">&nbsp;</span>
+				</a>
+
+				<f:if condition="{media.hidden} == 1">
+					<a title="Un-hide record" onclick="return jumpToUrl('tce_db.php?&amp;data[tx_jtgallery_domain_model_media][{media.uid}][hidden]=0&amp;redirect='+T3_THIS_LOCATION+'&amp;vC=a0ce0ab232&amp;formToken=4031737271427b3c5773808eb4c722e220dba946&amp;prErr=1&amp;uPT=1');" href="#">
+						<span class="t3-icon t3-icon-actions t3-icon-actions-edit t3-icon-edit-unhide">&nbsp;</span>
+					</a>
+				</f:if>
+				<f:if condition="{media.hidden} == 0">
+					<a title="Hide record" onclick="return jumpToUrl('tce_db.php?&amp;data[tx_jtgallery_domain_model_media][{media.uid}][hidden]=1&amp;redirect='+T3_THIS_LOCATION+'&amp;vC=a0ce0ab232&amp;formToken=4031737271427b3c5773808eb4c722e220dba946&amp;prErr=1&amp;uPT=1');" href="#">
+						<span class="t3-icon t3-icon-actions t3-icon-actions-edit t3-icon-edit-hide">&nbsp;</span>
+					</a>
+				</f:if>
+			</td>
+		</tr>
+	</f:for>
+	</tbody>
+</table>
+</f:section>

@@ -1,0 +1,64 @@
+page.includeJS.file1 = {$plugin.tx_jtgallery.settings.js.jQuery}
+
+page.includeJS.file2 = {$plugin.tx_jtgallery.settings.js.html5Gallery}
+
+plugin.tx_jtgallery {
+	view {
+		templateRootPath = {$plugin.tx_jtgallery.view.templateRootPath}
+		partialRootPath = {$plugin.tx_jtgallery.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_jtgallery.view.layoutRootPath}
+	}
+	#persistence {
+	#	storagePid = {$plugin.tx_jtgallery.persistence.storagePid}
+	#}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+}
+
+plugin.tx_jtgallery._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-jt-gallery table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-jt-gallery table th {
+		font-weight:bold;
+	}
+
+	.tx-jt-gallery table td {
+		vertical-align:top;
+	}
+
+	.typo3-messages .message-error {
+		color:red;
+	}
+
+	.typo3-messages .message-ok {
+		color:green;
+	}
+
+)
+
+ # Module configuration
+module.tx_jtgallery {
+	persistence {
+		storagePid = 
+	}
+	view {
+		templateRootPath = {$module.tx_jtgallery.view.templateRootPath}
+		partialRootPath = {$module.tx_jtgallery.view.partialRootPath}
+		layoutRootPath = {$module.tx_jtgallery.view.layoutRootPath}
+	}
+}
