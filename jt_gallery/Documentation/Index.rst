@@ -1,10 +1,9 @@
-﻿.. ==================================================
+.. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: Includes.txt
-
 
 .. _start:
 
@@ -15,7 +14,7 @@ JT Image & Video Gallery
 .. only:: html
 
 	:Classification:
-		extension_key
+		jt_gallery
 
 	:Version:
 		|release|
@@ -24,10 +23,10 @@ JT Image & Video Gallery
 		en
 
 	:Description:
-		enter description.
+		jQuery Image and Video Gallery extension. Supports Images, Flash, YouTube, Vimeo, MP4, M4V, OGG, OGV and WebM Videos. Fully responsive and supports desktop, iPhone, iPad, Android and all modern web browsers.
 
 	:Keywords:
-		comma,separated,list,keywords
+		video,image,gallery,responsive
 
 	:Copyright:
 		2014
@@ -36,7 +35,7 @@ JT Image & Video Gallery
 		Jawher Tabessi
 
 	:Email:
-		author@example.com
+		tabessijawher@gmail.com
 
 	:License:
 		This document is published under the Open Content License
@@ -48,7 +47,6 @@ JT Image & Video Gallery
 	The content of this document is related to TYPO3,
 	a GNU/GPL CMS/Framework available from `www.typo3.org <http://www.typo3.org/>`_.
 
-
 	**Table of Contents**
 
 .. toctree::
@@ -57,5 +55,7 @@ JT Image & Video Gallery
 	:glob:
 
 	Introduction/Index
-	UsersManual/Index
-	AdministratorManual/Index
+	Configuration/Index
+	KnownProblems/Index
+	Html5boxLicense/Index
+	ToDoList/Index

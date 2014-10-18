@@ -6,19 +6,55 @@
 .. include:: ../Includes.txt
 
 
+.. _introduction:
+
+Introduction
+============
+
+
+.. _what-it-does:
+
 What does it do?
-================
+----------------
 
-First of all, if you have any idea how this template can be improved, please, drop a note to our team_. Documentation is written in reST format. Please, refer to Help writing reStructuredText to get some insight regarding syntax and existing reST editors on the market.
+jQuery Image and Video Gallery extension. Supports Images, Flash, YouTube, MP4, M4V, OGG, OGV and WebM Videos. Fully responsive and supports desktop, iPhone, iPad, Android and all modern web browsers.
 
-.. _team: http://forge.typo3.org/projects/typo3v4-official_extension_template/issues
 
-Here should be given a brief overview of the extension. What does it do? What problem does it solve? Who is interested in this? Basically the document includes everything people need to know to decide, if they should go on with this extension.
+.. _screenshots:
 
-.. figure:: ../Images/IntroductionPackage.png
-	:width: 500px
-	:alt: Introduction Package
+Screenshots
+-----------
 
-	Introduction Package just after installation (caption of the image)
+Here are some shots of JT Gallery in action :
 
-	How the Frontend of the Introduction Package looks like just after installation (legend of the image)
+.. figure:: ../Images/Introduction/jt_gallery_video.png
+   :width: 871px
+   :alt: JT Gallery : video
+
+   JT Gallery : video
+
+   This is the video rendering of JT Gallery
+
+.. figure:: ../Images/Introduction/jt_gallery_image.png
+   :width: 871px
+   :alt: JT Gallery : image
+
+   JT Gallery : image
+
+   This is the image rendering of JT Gallery
+
+.. figure:: ../Images/Introduction/jt_gallery_youtube.png
+   :width: 871px
+   :alt: JT Gallery : youtube
+
+   JT Gallery : youtube
+
+   This is the youtube rendering of JT Gallery
+
+.. figure:: ../Images/Introduction/jt_gallery_backend-settings.png
+   :width: 871px
+   :alt: JT Gallery : backend settings
+
+   JT Gallery : backend settings
+
+   This is the backend settings of JT Gallery

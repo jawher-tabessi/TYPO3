@@ -12,7 +12,7 @@
 
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'JT Image & Video Gallery',
-	'description' => 'jQuery Image and Video Gallery extension. Supports Images, Flash, YouTube, Vimeo, MP4, M4V, OGG, OGV and WebM Videos. Fully responsive and supports desktop, iPhone, iPad, Andorid and all modern web browsers.',
+	'description' => 'jQuery Image and Video Gallery extension. Supports Images, Flash, YouTube, MP4, M4V, OGG, OGV and WebM Videos. Fully responsive and supports desktop, iPhone, iPad, Android and all modern web browsers.',
 	'category' => 'plugin',
 	'author' => 'Jawher Tabessi',
 	'author_email' => 'tabessijawher@gmail.com',
@@ -21,7 +21,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'uploadfolder' => '1',
 	'createDirs' => '',
 	'clearCacheOnLoad' => 0,
-	'version' => '1.0.0',
+	'version' => '1.0.4',
 	'constraints' => array(
 		'depends' => array(
 			'typo3' => '6.2.0-6.2.99',
