@@ -51,6 +51,14 @@ Here are some shots of JT Gallery in action :
 
    This is the youtube rendering of JT Gallery
 
+.. figure:: ../Images/Introduction/jt_gallery_vimeo.png
+   :width: 871px
+   :alt: JT Gallery : vimeo
+
+   JT Gallery : vimeo
+
+   This is the vimeo rendering of JT Gallery
+
 .. figure:: ../Images/Introduction/jt_gallery_backend-settings.png
    :width: 871px
    :alt: JT Gallery : backend settings

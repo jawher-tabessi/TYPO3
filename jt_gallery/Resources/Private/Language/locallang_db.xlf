@@ -1,40 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2014-08-14T14:44:53Z" product-name="jt_gallery">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-07-06T10:12:06Z" product-name="jt_gallery">
 		<header/>
 		<body>
 			<trans-unit id="tx_jtgallery_domain_model_media">
 				<source>Media</source>
 			</trans-unit>
-			<trans-unit id="tx_jtgallery_domain_model_media.main_title">
-				<source>Configuration</source>
-			</trans-unit>
-			<trans-unit id="tx_jtgallery_domain_model_media.storage_folder">
-				<source>Storage Folder</source>
-			</trans-unit>
-			<trans-unit id="tx_jtgallery_domain_model_media.width">
-				<source>Width</source>
-			</trans-unit>
-			<trans-unit id="tx_jtgallery_domain_model_media.height">
-				<source>Height</source>
-			</trans-unit>
-			<trans-unit id="tx_jtgallery_domain_model_media.skin">
-				<source>Skin</source>
-			</trans-unit>
-			<trans-unit id="tx_jtgallery_domain_model_media.type">
-				<source>Type</source>
-			</trans-unit>
 			<trans-unit id="tx_jtgallery_domain_model_media.description">
 				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_jtgallery_domain_model_media.media_type">
+				<source>Media Type</source>
+			</trans-unit>
+                        <trans-unit id="tx_jtgallery_domain_model_media.media_type_01">
+				<source>Image</source>
+			</trans-unit>
+                        <trans-unit id="tx_jtgallery_domain_model_media.media_type_02">
+				<source>Vidéo</source>
+			</trans-unit>
+                        <trans-unit id="tx_jtgallery_domain_model_media.media_type_03">
+				<source>Youtube</source>
+			</trans-unit>
+                        <trans-unit id="tx_jtgallery_domain_model_media.media_type_04">
+				<source>Vimeo</source>
 			</trans-unit>
 			<trans-unit id="tx_jtgallery_domain_model_media.thumbnail">
 				<source>Thumbnail</source>
 			</trans-unit>
-			<trans-unit id="tx_jtgallery_domain_model_media.file">
-				<source>File</source>
+			<trans-unit id="tx_jtgallery_domain_model_media.media_file">
+				<source>Media File</source>
 			</trans-unit>
 			<trans-unit id="tx_jtgallery_domain_model_media.url">
-				<source>Youtube video ID</source>
+				<source>Video Key (Youtube / Vimeo)</source>
+			</trans-unit>
+                        <trans-unit id="tx_jtgallery_flexform.storage_folder">
+				<source>Medias Folder</source>
+			</trans-unit>
+                        <trans-unit id="tx_jtgallery_flexform.width">
+				<source>Width</source>
+			</trans-unit>
+                        <trans-unit id="tx_jtgallery_flexform.height">
+				<source>Height</source>
+			</trans-unit>
+                        <trans-unit id="tx_jtgallery_flexform.skin">
+				<source>Skin</source>
 			</trans-unit>
 		</body>
 	</file>

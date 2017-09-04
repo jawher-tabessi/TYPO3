@@ -1,4 +1,4 @@
-
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:layout name="Default" />
 
 This Template is responsible for creating a table of domain objects.
@@ -13,38 +13,43 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
-<f:flashMessages renderMode="div" />
-<div style="display:none;" class="html5gallery" data-skin="{settings.skin}" data-responsive="true" data-width="{settings.width}" data-height="{settings.height}">
 
-<f:comment>
-Looping Medias
-</f:comment>
-<f:for each="{medias}" as="media">
-	<f:comment>
-	If Media is Image then construct image URL and Thumbnail
-	</f:comment>
-	<f:if condition="{media.type} == 1">
-		<a href="{media.file.originalResource.publicUrl}">
-			<f:image src="{media.file.originalResource.publicUrl}" alt="{media.description}" />
-		</a>
-	</f:if>
-	<f:comment>
-	If Media is Video then construct video URL and Thumbnail
-	</f:comment>
-	<f:if condition="{media.type} == 2">
-		<a href="/{media.file.originalResource.publicUrl}">
-			<f:image src="{media.thumbnail.originalResource.publicUrl}" alt="{media.description}" />
-		</a>
-	</f:if>
-	<f:comment>
-	If Media is Youtube then construct Youtube URL with the video ID and get Thumbnail generated automatically by Youtube
-	</f:comment>
-	<f:if condition="{media.type} == 3">
-		<a href="http://www.youtube.com/embed/FPdY-qeW7U4/{media.url}">
-			<img src="http://img.youtube.com/vi/{media.url}/2.jpg" alt="{media.description}"></a>
-		</a>
-	</f:if>
-</f:for>
+<f:flashMessages />
 
+<!-- A wrapper DIV to center the Gallery -->
+<div style="text-align:center;">
+
+    <!-- Define the Div for Gallery -->
+    <!-- 1. Add class html5gallery to the Div -->
+    <!-- 2. Define parameters with HTML5 data tags -->
+    <div style="display:none;margin:0 auto;" class="html5gallery" data-skin="{settings.skin}" data-width="{settings.width}" data-height="{settings.height}" data-slideshadow="false" data-resizemode="fill">
+        <f:for each="{medias}" as="media">
+            <!-- Image -->
+            <f:if condition="{media.mediaType} == 1">
+                <a href="{media.mediaFile.originalResource.publicUrl}">
+                    <f:image src="{media.mediaFile.originalResource.publicUrl}" alt="{media.description}" />
+                </a>
+            </f:if>
+            <!-- Video -->
+            <f:if condition="{media.mediaType} == 2">
+                <a href="/{media.mediaFile.originalResource.publicUrl}">
+                    <f:image src="{media.thumbnail.originalResource.publicUrl}" alt="{media.description}" />
+                </a>
+            </f:if>
+            <!-- Youtube -->
+            <f:if condition="{media.mediaType} == 3">
+		<a href="http://www.youtube.com/embed/{media.url}">
+                    <img src="http://img.youtube.com/vi/{media.url}/2.jpg" alt="{media.description}"></a>
+		</a>
+            </f:if>
+            <!-- Vimeo -->
+            <f:if condition="{media.mediaType} == 4">
+		<a href="http://player.vimeo.com/video/{media.url}?title=0&amp;byline=0&amp;portrait=0">
+                    <f:image src="{media.thumbnail.originalResource.publicUrl}" alt="{media.description}" />
+		</a>
+            </f:if>
+        </f:for>
+    </div>
 </div>
 </f:section>
+</html>

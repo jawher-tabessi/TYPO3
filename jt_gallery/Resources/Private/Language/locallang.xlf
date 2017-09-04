@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2014-08-14T17:16:28Z" product-name="jt_gallery">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-07-06T10:12:06Z" product-name="jt_gallery">
 		<header/>
 		<body>
 			<trans-unit id="tx_jtgallery_domain_model_media">
 				<source>Media</source>
 			</trans-unit>
-			<trans-unit id="tx_jtgallery_domain_model_media.type">
-				<source>Type</source>
-			</trans-unit>
 			<trans-unit id="tx_jtgallery_domain_model_media.description">
 				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_jtgallery_domain_model_media.media_type">
+				<source>Media Type</source>
 			</trans-unit>
 			<trans-unit id="tx_jtgallery_domain_model_media.thumbnail">
 				<source>Thumbnail</source>
 			</trans-unit>
-			<trans-unit id="tx_jtgallery_domain_model_media.file">
-				<source>File</source>
+			<trans-unit id="tx_jtgallery_domain_model_media.media_file">
+				<source>Media File</source>
 			</trans-unit>
 			<trans-unit id="tx_jtgallery_domain_model_media.url">
 				<source>Url</source>

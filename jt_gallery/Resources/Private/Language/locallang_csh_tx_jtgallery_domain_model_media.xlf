@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2014-08-14T17:16:28Z" product-name="jt_gallery">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-07-06T10:12:06Z" product-name="jt_gallery">
 		<header/>
 		<body>
-			<trans-unit id="type.description">
-				<source>type</source>
-			</trans-unit>
 			<trans-unit id="description.description">
 				<source>description</source>
+			</trans-unit>
+			<trans-unit id="media_type.description">
+				<source>mediaType</source>
 			</trans-unit>
 			<trans-unit id="thumbnail.description">
 				<source>thumbnail</source>
 			</trans-unit>
-			<trans-unit id="file.description">
-				<source>file</source>
+			<trans-unit id="media_file.description">
+				<source>mediaFile</source>
 			</trans-unit>
 			<trans-unit id="url.description">
 				<source>url</source>

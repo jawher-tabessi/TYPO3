@@ -1,0 +1,19 @@
+{
+    "name": "jt/jt-gallery",
+    "type": "typo3-cms-extension",
+    "description": "jQuery Image and Video Gallery extension. Supports Images, Flash, YouTube, MP4, M4V, OGG, OGV and WebM Videos. Fully responsive and supports desktop, iPhone, iPad, Android and all modern web browsers.",
+    "authors": [
+        {
+            "name": "Jawher Tabessi",
+            "role": "Product Manager"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^8.6.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "JT\\JtGallery\\": "Classes"
+        }
+    }
+}

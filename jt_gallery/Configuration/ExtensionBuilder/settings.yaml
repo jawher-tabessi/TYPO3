@@ -1,6 +1,6 @@
 #
 # Extension Builder settings for extension jt_gallery
-# generated 2014-08-14T14:38:00Z
+# generated 2017-07-06T10:12:00Z
 #
 # See http://www.yaml.org/spec/1.2/spec.html
 #
@@ -25,6 +25,8 @@
 #   preserved (renaming a property or DomainObject will result in new keys and new labels)
 #
 #   for other files: You will find a Split token at the end of the file
+#   see: \EBT\ExtensionBuilder\Service\RoundTrip::SPLIT_TOKEN
+#
 #   After this token you can write whatever you want and it will be appended
 #   everytime the code is generated
 #
@@ -45,7 +47,7 @@ overwriteSettings:
       Repository: merge
 
   Configuration:
-    #TCA: merge
+    #TCA merge not possible - use overrides directory
     #TypoScript: keep
 
   Resources:
@@ -53,7 +55,7 @@ overwriteSettings:
       #Language: merge
       #Templates: keep
 
-  ext_icon.gif: keep
+  user_extension.svg: keep
 
 #  ext_localconf.php: merge
 
@@ -62,7 +64,10 @@ overwriteSettings:
 #  ext_tables.sql: merge
 
 ## use static date attribute in xliff files ##
-#staticDateInXliffFiles: 2014-08-14T14:38:00Z
+#staticDateInXliffFiles: 2017-07-06T10:12:00Z
+
+## skip docComment (license header) ##
+#skipDocComment
 
 ## list of error codes for warnings that should be ignored ##
 #ignoreWarnings:

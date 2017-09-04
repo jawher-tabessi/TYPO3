@@ -10,5 +10,4 @@
 
 To-Do list
 ==========
-- Vimeo support
-- Advanced search for backend module
+- Backend module

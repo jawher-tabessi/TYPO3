@@ -1,1 +1,140 @@
-{"modules":[{"config":{"position":[81,60]},"name":"New Model Object","value":{"actionGroup":{"_default0_list":true,"_default1_show":true,"_default2_new_create":true,"_default3_edit_update":true,"_default4_delete":true,"customActions":[]},"name":"Media","objectsettings":{"addDeletedField":true,"addHiddenField":true,"addStarttimeEndtimeFields":true,"aggregateRoot":true,"categorizable":false,"description":"Media","mapToTable":"","parentClass":"","sorting":false,"type":"Entity","uid":"661138931844"},"propertyGroup":{"properties":[{"allowedFileTypes":"","maxItems":"1","propertyDescription":"","propertyIsExcludeField":true,"propertyIsRequired":false,"propertyName":"type","propertyType":"Select","uid":"188724653118"},{"allowedFileTypes":"","maxItems":"1","propertyDescription":"","propertyIsExcludeField":true,"propertyIsRequired":false,"propertyName":"description","propertyType":"String","uid":"951800029217"},{"allowedFileTypes":"","maxItems":"1","propertyDescription":"","propertyIsExcludeField":true,"propertyIsRequired":false,"propertyName":"thumbnail","propertyType":"Image","uid":"818254167257"},{"allowedFileTypes":"","maxItems":"1","propertyDescription":"","propertyIsExcludeField":true,"propertyIsRequired":false,"propertyName":"file","propertyType":"File","uid":"194250883766"},{"allowedFileTypes":"","maxItems":"1","propertyDescription":"","propertyIsExcludeField":true,"propertyIsRequired":false,"propertyName":"url","propertyType":"String","uid":"1015700368205"}]},"relationGroup":{"relations":[]}}}],"properties":{"backendModules":[{"actions":{"controllerActionCombinations":""},"description":"Manage JT Gallery medias","key":"manager","mainModule":"web","name":"JT Gallery Manager","tabLabel":"JT Gallery Manager"}],"description":"jQuery Image and Video Gallery extension. Supports Images, Flash, YouTube, Vimeo, MP4, M4V, OGG, OGV and WebM Videos. Fully responsive and supports desktop, iPhone, iPad, Andorid and all modern web browsers.","emConf":{"category":"plugin","custom_category":"","dependsOn":"typo3 => 6.2\n","disableLocalization":false,"disableVersioning":false,"sourceLanguage":"en","state":"alpha","targetVersion":"6.2","version":"1.0.0"},"extensionKey":"jt_gallery","name":"JT Image & Video Gallery","originalExtensionKey":"jt_gallery","persons":[{"company":"Open vision","email":"tabessijawher@gmail.com","name":"Jawher Tabessi","role":"Product Manager"}],"plugins":[{"actions":{"controllerActionCombinations":"","noncacheableActions":"","switchableActions":""},"key":"pi1","name":"JT Gallery"}],"vendorName":"JT"},"wires":[],"log":{"last_modified":"2014-08-14 05:16","extension_builder_version":"6.2.0","be_user":" (1)"}}
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    513,
+                    14
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": true,
+                    "_default1_show": false,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": []
+                },
+                "name": "Media",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": true,
+                    "type": "Entity",
+                    "uid": "1432445953215"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": true,
+                            "propertyName": "description",
+                            "propertyType": "String",
+                            "uid": "113905587827"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": true,
+                            "propertyName": "mediaType",
+                            "propertyType": "Select",
+                            "uid": "128897298673"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "thumbnail",
+                            "propertyType": "Image",
+                            "uid": "1403931097171"
+                        },
+                        {
+                            "allowedFileTypes": "gif,png,jpg,jpeg,webm,mp4,ogv,wav,mp3",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "mediaFile",
+                            "propertyType": "File",
+                            "uid": "841500607020"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "url",
+                            "propertyType": "String",
+                            "uid": "1293440621111"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [],
+        "description": "jQuery Image and Video Gallery extension. Supports Images, Flash, YouTube, MP4, M4V, OGG, OGV and WebM Videos. Fully responsive and supports desktop, iPhone, iPad, Android and all modern web browsers.",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 8.6.0-8.6.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "beta",
+            "targetVersion": "8.6.0-8.6.99",
+            "version": "2.0.0"
+        },
+        "extensionKey": "jt_gallery",
+        "name": "JT Image & Video Gallery",
+        "originalExtensionKey": "",
+        "originalVendorName": "",
+        "persons": [
+            {
+                "company": "",
+                "email": "tabessijawher@gmail.com",
+                "name": "Jawher Tabessi",
+                "role": "Product Manager"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "key": "pi1",
+                "name": "JT Image & Video Gallery"
+            }
+        ],
+        "vendorName": "JT"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2017-07-06 10:12",
+        "extension_builder_version": "8.6.0",
+        "be_user": " (1)"
+    }
+}
